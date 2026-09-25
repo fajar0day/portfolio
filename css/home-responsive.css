@@ -88,7 +88,7 @@
     }
 
     .notes-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .note-card-wide {
@@ -100,8 +100,18 @@
 
     .contact-banner-layout,
     .direction-layout,
-    .manifesto-grid {
+    .manifesto-grid,
+    .split-heading {
         grid-template-columns: 1fr;
+    }
+
+    .split-heading {
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .split-heading .section-intro {
+        max-width: none;
     }
 
     .contact-banner .contact-form {
@@ -171,7 +181,7 @@
 
     .passion-grid,
     .notes-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .passion-card {
