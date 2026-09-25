@@ -1,0 +1,109 @@
+.container {
+    width: min(calc(100% - (var(--space-container) * 2)), var(--container-width));
+    margin-inline: auto;
+}
+
+.site-header {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 1000;
+    height: var(--header-height);
+    border-bottom: 1px solid transparent;
+    transition: background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+
+.site-header.is-scrolled {
+    border-color: var(--color-line-light);
+    background: rgba(21, 21, 18, 0.88);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.nav-shell {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: clamp(1.25rem, 4vw, 4rem);
+    height: 100%;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: max-content;
+}
+
+.brand-mark {
+    display: grid;
+    width: 2.6rem;
+    height: 2.6rem;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-lime);
+    color: var(--color-ink);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.brand-name {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.site-header .brand-name {
+    color: var(--color-white);
+}
+
+.primary-nav {
+    justify-self: center;
+}
+
+.primary-nav ul {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.2rem, 2.4vw, 2.4rem);
+    padding: 0;
+    list-style: none;
+}
+
+.primary-nav a {
+    position: relative;
+    padding-block: 0.55rem;
+    color: var(--color-muted-light);
+    font-size: 0.84rem;
+    font-weight: 500;
+    transition: color 180ms ease;
+}
+
+.primary-nav a::after {
+    position: absolute;
+    right: 0;
+    bottom: 0.15rem;
+    left: 0;
+    height: 1px;
+    background: var(--color-lime);
+    content: "";
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 220ms var(--ease-out);
+}
+
+.primary-nav a:hover,
+.primary-nav a.is-active {
+    color: var(--color-white);
+}
+
+.primary-nav a:hover::after,
+.primary-nav a.is-active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.menu-toggle {
+    display: none;
+}

@@ -1,0 +1,25 @@
+:root {
+    --color-ink: #151512;
+    --color-ink-soft: #24241f;
+    --color-paper: #f3f0e8;
+    --color-white: #fffdf8;
+    --color-coral: #ff603d;
+    --color-lime: #dfff45;
+    --color-violet: #6f5ce8;
+    --color-blue: #4f7cff;
+    --color-muted: rgba(21, 21, 18, 0.64);
+    --color-muted-light: rgba(255, 253, 248, 0.66);
+    --color-line: rgba(21, 21, 18, 0.14);
+    --color-line-light: rgba(255, 253, 248, 0.16);
+    --font-sans: "Manrope", "Segoe UI", Arial, sans-serif;
+    --font-display: "Bodoni Moda", "Times New Roman", serif;
+    --space-section: clamp(5.5rem, 10vw, 9.5rem);
+    --space-container: clamp(1.25rem, 4vw, 4rem);
+    --container-width: 80rem;
+    --radius-sm: 0.75rem;
+    --radius-md: 1.25rem;
+    --radius-lg: 2rem;
+    --shadow-soft: 0 24px 70px rgba(21, 21, 18, 0.12);
+    --header-height: 5.25rem;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

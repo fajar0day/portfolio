@@ -1,0 +1,53 @@
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.js .reveal {
+    opacity: 0;
+    transform: translateY(1.6rem);
+    transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
+}
+
+.js .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js .reveal-delay-one {
+    transition-delay: 90ms;
+}
+
+.js .reveal-delay-two {
+    transition-delay: 180ms;
+}
+
+.js .reveal-delay-three {
+    transition-delay: 270ms;
+}
+
+@keyframes scroll-down {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0.35rem);
+    }
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
