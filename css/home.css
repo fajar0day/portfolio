@@ -559,14 +559,15 @@
 
 .contact-banner-copy h2 {
     max-width: 14ch;
+    font-family: var(--font-sans);
     font-size: clamp(2.6rem, 5.8vw, 5.2rem);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .contact-banner-copy h2 em {
     color: var(--color-lime);
-    font-family: var(--font-display);
-    font-weight: 400;
+    font-family: var(--font-sans);
+    font-weight: 600;
 }
 
 .contact-banner-copy > p:not(.eyebrow) {
