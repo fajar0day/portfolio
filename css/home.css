@@ -362,6 +362,12 @@
     font-family: var(--font-sans);
 }
 
+#visual-title,
+#visual-title em {
+    font-family: var(--font-sans);
+    font-weight: 600;
+}
+
 .passion-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -448,14 +454,15 @@
 
 .direction-copy h2 {
     max-width: 12ch;
+    font-family: var(--font-sans);
     font-size: clamp(2.5rem, 5.8vw, 5.2rem);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .direction-copy h2 em {
     color: var(--color-lime);
-    font-family: var(--font-display);
-    font-weight: 400;
+    font-family: var(--font-sans);
+    font-weight: 600;
 }
 
 .direction-copy > p:last-child {
