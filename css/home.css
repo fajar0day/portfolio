@@ -357,6 +357,11 @@
     background: var(--color-white);
 }
 
+#passion-title,
+#passion-title em {
+    font-family: var(--font-sans);
+}
+
 .passion-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
